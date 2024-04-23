@@ -6,6 +6,8 @@ import { readFileSync } from "fs";
 import { join } from "path";
 import { context } from "./context";
 
+// reading the schema from the schema.graphql file
+
 export const schema = createSchema({
   typeDefs: readFileSync(
     join(__dirname, "schema/schema.graphql"),
